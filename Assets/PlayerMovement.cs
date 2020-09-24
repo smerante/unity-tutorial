@@ -4,6 +4,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rigidBody;
+    public BoxCollider playerCollider;
+    public BoxCollider groundCollider;
+
     public float forwardForce = 500;
     public float sidewaysForce = 100;
     public float jumpForce = 5000;
@@ -29,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 rigidBody.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
             }
-            if (Input.GetKey("space") && (Math.Round(this.rigidBody.velocity.y) == 0 && this.rigidBody.position.y >= 1 && this.rigidBody.position.y <= 1.5))
+            if (Input.GetKey("space") && this.playerCollider.bounds.Intersects(this.groundCollider.bounds))
             {
                 rigidBody.AddForce(0, jumpForce * Time.deltaTime, 0, ForceMode.VelocityChange);
             }

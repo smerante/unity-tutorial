@@ -2575,6 +2575,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 1874115848}
+  playerCollider: {fileID: 1874115849}
+  groundCollider: {fileID: 2020964479}
   forwardForce: 1000
   sidewaysForce: 100
   jumpForce: 500
@@ -2836,6 +2838,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 0}
+  playerCollider: {fileID: 0}
+  groundCollider: {fileID: 0}
   forwardForce: 500
   sidewaysForce: 500
   jumpForce: 500
