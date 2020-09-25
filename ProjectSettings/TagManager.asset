@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - BrokenObstacle
+  - EndGame
   layers:
   - Default
   - TransparentFX

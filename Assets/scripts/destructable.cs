@@ -8,7 +8,6 @@ public class destructable : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(this.tag + " : " + (collision.gameObject.tag));
         if (collision.gameObject.tag == "Player" && this.tag == "Obstacle")
         {
             Instantiate(this.destroyedVersion, this.transform.position, this.transform.rotation);

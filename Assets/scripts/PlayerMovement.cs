@@ -36,6 +36,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 rigidBody.AddForce(0, jumpForce * Time.deltaTime, 0, ForceMode.VelocityChange);
             }
+            if(rigidBody.position.y < -2)
+            {
+                FindObjectOfType<GameManager>().EndGame();
+            }
         }
     }
 }
