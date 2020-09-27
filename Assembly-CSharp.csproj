@@ -68,6 +68,9 @@
     <Compile Include="Assets\scripts\GameManager.cs" />
     <Compile Include="Assets\scripts\LevelComplete.cs" />
     <Compile Include="Assets\scripts\Menu.cs" />
+    <Compile Include="Assets\scripts\MouseListener.cs" />
+    <Compile Include="Assets\scripts\MouseListnerEvents.cs" />
+    <Compile Include="Assets\scripts\MouseMevement.cs" />
     <Compile Include="Assets\scripts\PlayerCollision.cs" />
     <Compile Include="Assets\scripts\PlayerMovement.cs" />
     <Compile Include="Assets\scripts\Quit.cs" />
